@@ -11,15 +11,20 @@ const DashBoardLayout = () => {
     return (
         <div className="drawer drawer-mobile">
             <input id="dashboard-drawer" type="checkbox" className="drawer-toggle" />
-            <div className="drawer-content lg:px-4">
+
+
+            <div className="drawer-content bg-[#f1f3f7]  lg:px-4">
                 {/* <!-- Page content here --> */}
                 <TopBar/>
-                <Outlet></Outlet>
+               <div className='mx-4 lg:mx-0 mt-5'> <Outlet></Outlet></div>
             </div>
+
+
+            {/*----------- Sidebar ------- */}
             <div className="drawer-side">
                 <label htmlFor="dashboard-drawer" className="drawer-overlay"></label>
 
-                <ul className="menu p-4 w-56 bg-slate-900  text-gray-400 ">
+                <ul className="menu p-4 w-52 bg-slate-900  text-gray-400 ">
                     {/* <!-- Sidebar content here --> */}
                     <li className="hover:text-white "><Link to="/"><AiOutlineAppstore/> Dashboard</Link></li>
                     <li className="hover:text-white "><Link to="/calendar"><AiOutlineCalendar/>Calendar</Link></li>
