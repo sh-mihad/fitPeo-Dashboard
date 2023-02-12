@@ -14,7 +14,7 @@ const TopBar = () => {
             
 
             <div className="flex-1">
-                <Link to="/" className="btn btn-ghost normal-case text-lg lg:text-xl">Dashboard</Link>
+                <Link to="/" className="btn btn-ghost normal-case hidden lg:block lg:text-xl">Dashboard</Link>
             </div>
             <div className="flex-none">
                 <div className="dropdown dropdown-end">

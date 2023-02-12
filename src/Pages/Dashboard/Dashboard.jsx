@@ -5,6 +5,8 @@ import UserProfile from '../../Component/UserProfile/UserProfile';
 import Overview from '../../Component/Overview/Overview';
 import UserActivityCard from '../../Component/UserActivityCard/UserActivityCard';
 import OrderStatus from '../../Component/OrderStatus/OrderStatus';
+import TopProductCard from '../../Component/TopProductCard/TopProductCard';
+
 
 const Dashboard = () => {
     return (
@@ -30,7 +32,7 @@ const Dashboard = () => {
                 <div className='grid grid-cols-1 gap-3 lg:grid-cols-3'>
                     <UserActivityCard/>
                     <OrderStatus/>
-                    <UserActivityCard/>
+                    <TopProductCard/>
                 </div>
 
 
