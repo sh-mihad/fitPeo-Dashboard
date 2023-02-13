@@ -1,5 +1,6 @@
 import React from 'react';
 import EarningBarChart from '../../Charts/EarningBarChart/EarningBarChart';
+import EarningCharts from '../../Charts/EarningCharts/EarningCharts';
 import EearningDeatils from '../EarningDetails/EearningDeatils';
 
 const Overview = () => {
@@ -37,7 +38,8 @@ const Overview = () => {
                 <p className='mb-5 text-gray-700 text-end text-base font-semibold'>Sort By: <small>Yearly</small> </p>
                 {/* <EarningBarChart/> */}
                 <div className='h-96'>
-                <EarningBarChart/>
+                {/* <EarningBarChart/> */}
+                <EarningCharts/>
                 </div>
             </div>
         </div>

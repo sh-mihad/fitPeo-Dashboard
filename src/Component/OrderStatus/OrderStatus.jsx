@@ -1,5 +1,6 @@
 import React from 'react';
 import OrderChart from '../../Charts/OrderChart/OrderChart';
+import OrdersChart from '../../Charts/OrdersChart/OrdersChart';
 
 const OrderStatus = () => {
     return (
@@ -11,7 +12,8 @@ const OrderStatus = () => {
 
             {/* -------Chart Component---------- */}            
             <div className='h-60 '>
-                <OrderChart/>
+                {/* <OrderChart/> */}
+                <OrdersChart/>
                 <hr />
             </div>
             <div className='grid grid-cols-3'>
