@@ -9,11 +9,12 @@ const TopProductCard = () => {
             </div>
 
             {/* ---------top product details----------- */}
-           <TopProductCardData/>
-           <TopProductCardData/>
-           <TopProductCardData/>
-           <TopProductCardData/>
-           <TopProductCardData/>
+           <TopProductCardData num={1} name={"Polo blue T-shirt"} price={25.4} TotalSell={"3.82k"}/>
+           <TopProductCardData num={2} name={"Hoodie for men"} price={25.4} TotalSell={"3.14k"}/>
+           <TopProductCardData num={3} name={"Red color Cap"} price={25.4} TotalSell={"2.84k"}/>
+           <TopProductCardData num={4} name={"Pocket T-shirt"} price={25.4} TotalSell={"2.02k"}/>
+           
+          
         </div>
     );
 };

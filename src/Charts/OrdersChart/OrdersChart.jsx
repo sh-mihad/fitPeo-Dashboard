@@ -12,24 +12,30 @@ const OrdersChart = () => {
         <ResponsivePie
         data={mockPieData}
         margin={{ top: 20, right: 20, bottom: 20, left: 20 }}
-        startAngle={-180}
-        innerRadius={0.65}
-        borderColor="black"
+        innerRadius={0.6}
+        activeOuterRadiusOffset={8}
+        colors={{ scheme: 'blues' }}
+        borderWidth={1}
+        borderColor={{
+            from: 'color',
+            modifiers: [
+                [
+                    'darker',
+                    0.2
+                ]
+            ]
+        }}
         enableArcLinkLabels={false}
-        arcLinkLabelsSkipAngle={7}
-        arcLinkLabelsTextOffset={0}
-        arcLinkLabelsTextColor={{ theme: 'grid.line.stroke' }}
-        arcLinkLabelsOffset={-6}
-        arcLinkLabelsDiagonalLength={15}
-        arcLinkLabelsStraightLength={7}
-        arcLinkLabelsThickness={0}
-        arcLinkLabelsColor={{ from: 'color', modifiers: [] }}
+        arcLinkLabelsSkipAngle={10}
+        arcLinkLabelsTextColor="#333333"
+        arcLinkLabelsThickness={2}
+        arcLinkLabelsColor={{ from: 'color' }}
         arcLabelsTextColor={{
             from: 'color',
             modifiers: [
                 [
-                    'brighter',
-                    '3'
+                    'darker',
+                    '1.5'
                 ]
             ]
         }}
@@ -103,8 +109,31 @@ const OrdersChart = () => {
                 id: 'lines'
             }
         ]}
-        motionConfig="wobbly"
-        legends={[]}
+        legends={[
+            {
+                anchor: 'bottom',
+                direction: 'row',
+                justify: false,
+                translateX: 0,
+                translateY: 56,
+                itemsSpacing: 0,
+                itemWidth: 100,
+                itemHeight: 18,
+                itemTextColor: '#999',
+                itemDirection: 'left-to-right',
+                itemOpacity: 1,
+                symbolSize: 18,
+                symbolShape: 'circle',
+                effects: [
+                    {
+                        on: 'hover',
+                        style: {
+                            itemTextColor: '#000'
+                        }
+                    }
+                ]
+            }
+        ]}
     />
     );
 };

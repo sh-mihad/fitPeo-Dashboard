@@ -15,7 +15,7 @@ const EarningCharts = () => {
             'donut'
         ]}
         indexBy="country"
-        margin={{ top: 50, right: 80, bottom: 50, left: 60 }}
+        margin={{ top: 50, right: 50, bottom: 50, left: 60 }}
         innerPadding={3}
         groupMode="grouped"
         valueScale={{ type: 'linear' }}

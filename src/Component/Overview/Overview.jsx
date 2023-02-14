@@ -1,5 +1,4 @@
 import React from 'react';
-import EarningBarChart from '../../Charts/EarningBarChart/EarningBarChart';
 import EarningCharts from '../../Charts/EarningCharts/EarningCharts';
 import EearningDeatils from '../EarningDetails/EearningDeatils';
 
@@ -23,11 +22,11 @@ const Overview = () => {
                 {/* ---------Earnig Details---------- */}
                 <div className='grid grid-cols-1 lg:grid-cols-2 my-4'>
                    <EearningDeatils data={"Orders"} number={"5,643"}/> 
-                   <EearningDeatils data={"Orders"} number={"5,643"}/> 
-                   <EearningDeatils data={"Orders"} number={"5,643"}/> 
-                   <EearningDeatils data={"Orders"} number={"5,643"}/> 
-                   <EearningDeatils data={"Orders"} number={"5,643"}/> 
-                   <EearningDeatils data={"Orders"} number={"5,643"}/> 
+                   <EearningDeatils data={"Sales"} number={"16,273"}/> 
+                   <EearningDeatils data={"Order V.."} number={"12.03%"}/> 
+                   <EearningDeatils data={"Customers"} number={"21456"}/> 
+                   <EearningDeatils data={"Income"} number={"35,643"}/> 
+                   <EearningDeatils data={"Expenses"} number={"12,248"}/> 
                 </div>
 
             </div>
@@ -36,9 +35,8 @@ const Overview = () => {
             {/* Section for overview chart */}
             <div className=' col-span-1 lg:col-span-2'>
                 <p className='mb-5 text-gray-700 text-end text-base font-semibold'>Sort By: <small>Yearly</small> </p>
-                {/* <EarningBarChart/> */}
                 <div className='h-96'>
-                {/* <EarningBarChart/> */}
+            
                 <EarningCharts/>
                 </div>
             </div>

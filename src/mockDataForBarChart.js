@@ -74,9 +74,9 @@ export const mockBarData = [
   export const mockPieData = [
   
     {
-      id: "Complete",
+      id: "Cancel",
     
-      value: 70,
+      value: 19,
       color: "hsl(0, 100%, 50%)",
     },
     {
@@ -86,9 +86,9 @@ export const mockBarData = [
       color: "hsl(545°, 99%, 70%)",
     },
     {
-      id: "Cancel",
+      id: "Complete",
      
-      value: 19,
+      value: 70,
       color: "hsl(380°, 25%, 50% )",
     },
   ];

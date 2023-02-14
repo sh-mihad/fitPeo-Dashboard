@@ -1,5 +1,4 @@
 import React from 'react';
-import OrderChart from '../../Charts/OrderChart/OrderChart';
 import OrdersChart from '../../Charts/OrdersChart/OrdersChart';
 
 const OrderStatus = () => {
@@ -16,18 +15,18 @@ const OrderStatus = () => {
                 <OrdersChart/>
                 <hr />
             </div>
-            <div className='grid grid-cols-3'>
+            <div className='grid grid-cols-3 gap-3'>
                   <div className='text-center font-semibold'>
                     <p className='text-xs text-gray-500 mt-2 mb-1'>Completed</p>
                     <p className='text-xs text-gray-500'>70</p>
                   </div>
                   <div className='text-center font-semibold'>
-                    <p className='text-xs text-gray-500 mt-2 mb-1'>Completed</p>
-                    <p className='text-xs text-gray-500'>70</p>
+                    <p className='text-xs text-gray-500 mt-2 mb-1'>Pending</p>
+                    <p className='text-xs text-gray-500'>25</p>
                   </div>
                   <div className='text-center font-semibold'>
-                    <p className='text-xs text-gray-500 mt-2 mb-1'>Completed</p>
-                    <p className='text-xs text-gray-500'>70</p>
+                    <p className='text-xs text-gray-500 mt-2 mb-1'>Cancel</p>
+                    <p className='text-xs text-gray-500'>19</p>
                   </div>
             </div>
         </div>

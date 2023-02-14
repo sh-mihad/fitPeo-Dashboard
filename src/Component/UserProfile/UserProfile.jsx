@@ -38,13 +38,13 @@ const UserProfile = () => {
                     <p className='my-5 text-start text-lg font-semibold'>Earning</p>
 
                     <p className='text-xl font-semibold my-2'>76%</p>
-                    <progress className="progress progress-primary w-56" value="70" max="100"></progress>
+                    <progress className="progress progress-info w-56" value="70" max="100"></progress>
 
                     <p className='text-xl font-semibold mt-3'>$26,256</p>
                     <p className='text-sm text-gray-400 my-2'>Earning this Month</p>
 
                     <div className='flex gap-3 text-center items-center justify-center my-5'>
-                        <p className={`text-sm p-1 font-light text-gray-500 bg-green-200  rounded-lg `}>+ 2.65%</p>
+                        <p className={`text-xs p-1 font-light text-gray-500 bg-green-200  rounded-lg `}>+ 2.65%</p>
                         <p className='text-sm text-gray-400 my-2 text-start'>From previous period</p>
                     </div>
                     <div className="divider mb-0"></div>
@@ -55,8 +55,9 @@ const UserProfile = () => {
                 <div className='text-center my-4 mx-5'>
                 <p className='my-5 text-start text-lg font-semibold'>Recent Activity</p>
                 <Activity date={12} month={"Sept"} data={`Responded to need “Volunteer Activities"`}/>
-                <Activity date={12} month={"Sept"} data={`Responded to need “Volunteer Activities"`}/>
-                <Activity date={12} month={"Sept"} data={`Responded to need “Volunteer Activities"`}/>
+                <Activity date={13} month={"Sept"} data={`Everyone realizes would be desirable"`}/>
+                <Activity date={14} month={"Sept"} data={`Joined the group “Boardsmanship Forum”"`}/>
+                <Activity date={14} month={"Sept"} data={`Joined the group “Boardsmanship Forum”"`}/>
               
                 </div>
 
